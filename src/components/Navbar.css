@@ -1,0 +1,128 @@
+/* Navbar Component Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  z-index: 1000;
+  transition: var(--transition-smooth);
+  background-color: #000000; /* Solid black to blend the logo perfectly */
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar.scrolled {
+  padding: 0.8rem 2rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: var(--transition-fast);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: var(--transition-fast);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+  color: var(--color-gold);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-gold);
+  margin-bottom: 5px;
+  transition: var(--transition-fast);
+}
+
+/* Hamburgers animation to "X" when active */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Breakpoint updated to 992px for smooth layouts */
+@media (max-width: 992px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    flex-direction: column;
+    padding: 3rem 0;
+    gap: 2rem;
+    border-bottom: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+    align-items: center;
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+
+  /* Shrink button inside navbar slightly on tablet */
+  .navbar .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  
+  /* Hide the navbar book table button on very small phones to make room for logo and hamburger */
+  .navbar .btn {
+    display: none;
+  }
+}
