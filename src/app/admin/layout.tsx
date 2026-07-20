@@ -1,7 +1,12 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import './admin.css';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
   return (
     <div className="admin-layout">
       <aside className="admin-sidebar">
@@ -10,9 +15,21 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         </div>
         <nav className="admin-nav">
           <ul>
-            <li><Link href="/admin">Rezervasyonlar</Link></li>
-            <li><Link href="/admin/menu">Menü Yönetimi</Link></li>
-            <li><Link href="/">Siteye Dön</Link></li>
+            <li>
+              <Link href="/admin" className={pathname === '/admin' ? 'active' : ''}>
+                Rezervasyonlar
+              </Link>
+            </li>
+            <li>
+              <Link href="/admin/menu" className={pathname === '/admin/menu' ? 'active' : ''}>
+                Menü Yönetimi
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                Siteye Dön
+              </Link>
+            </li>
           </ul>
         </nav>
       </aside>

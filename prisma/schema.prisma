@@ -26,6 +26,7 @@ model Reservation {
   date       String
   time       String
   guests     String
+  hasShuttle Boolean  @default(false)
   status     String   @default("pending") // pending, confirmed, cancelled
   createdAt  DateTime @default(now())
 }

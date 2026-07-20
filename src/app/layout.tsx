@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter, Montserrat } from 'next/font/google';
+import { Inter, Montserrat, Playfair_Display } from 'next/font/google';
+import { LanguageProvider } from '@/context/LanguageContext';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
-  title: 'EV BAR & KITCHEN',
-  description: 'EV Bar & Kitchen. Modern atmosferimizde eşsiz lezzetleri deneyimleyin.',
+  title: 'Ev Restaurant',
+  description: 'Ev Restaurant. Modern atmosferimizde eşsiz lezzetleri deneyimleyin.',
 };
 
 export default function RootLayout({
@@ -16,9 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="tr">
-      <body className={`${inter.variable} ${montserrat.variable} font-sans`}>
-        {children}
+    <html suppressHydrationWarning>
+      <body className={`${inter.variable} ${montserrat.variable} ${playfair.variable} font-sans`} suppressHydrationWarning>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
