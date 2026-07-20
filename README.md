@@ -1,29 +1,14 @@
-# 🍷 EV Bar & Kitchen — Premium Fine Dining Restaurant System
+# 🍷 EV Bar & Kitchen — Premium Fine Dining & Booking System
 
-EV Bar & Kitchen is a high-end, immersive, and fully responsive web application built with **Next.js** and **Prisma ORM (SQLite)**. Inspired by luxury aesthetics and fine dining culture, the system offers an interactive experience planner, seat-mapping reservation, a custom admin dashboard, and seamless multi-language support.
+EV Bar & Kitchen is a high-end, fully responsive web application built with **Next.js (App Router)** and **Prisma ORM (SQLite)**. Inspired by luxury aesthetics and fine dining culture, the system offers an interactive experience planner, seat-mapping reservation, a custom admin dashboard, and seamless multi-language support.
 
 ---
 
-## 📸 Showcase & Visual Identity
+## 📸 Showcase & Preview
 
-<table width="100%">
-  <tr>
-    <td width="35%" align="center" valign="top">
-      <img src="public/assets/homepage-preview.png" width="300" alt="EV Bar & Kitchen Homepage Preview" />
-    </td>
-    <td width="65%" valign="top">
-      <h3>✨ Premium Fine Dining Digital Experience</h3>
-      <p>EV Bar & Kitchen's user interface is designed to evoke a sense of high-end luxury and modern sophistication. Every visual element is crafted to provide a premium feel:</p>
-      <ul>
-        <li><strong>Fine Dining Artistry:</strong> Elegant presentation sections showing high-quality food photography and culinary philosophy.</li>
-        <li><strong>Interactive Seat & Stage Layout:</strong> A clean, user-friendly theatre-style seat selection interface that updates in real-time.</li>
-        <li><strong>Seamless Experience Customization:</strong> Book luxury add-ons like limousine shuttles or VIP lounge access directly from the reservation flow.</li>
-        <li><strong>Atmospheric Ambience:</strong> Visually rich dark theme with floating gold and emerald green lights and subtle texture noise.</li>
-      </ul>
-      <p><i>Scroll through the live page preview on the left to see the entire luxury landing experience.</i></p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="public/assets/homepage-preview.png" width="100%" alt="EV Bar & Kitchen Homepage Preview" />
+</p>
 
 ---
 
@@ -116,7 +101,7 @@ This opens a database UI on [http://localhost:5555](http://localhost:5555).
 
 ---
 
-## ✉️ Automated Notifications
+## ✉️ Env Configuration
 Configure SMTP credentials inside your environment file (`.env`) to enable email dispatch via Nodemailer whenever reservations are submitted.
 ```env
 DATABASE_URL="file:./dev.db"
