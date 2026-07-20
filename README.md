@@ -4,9 +4,26 @@ EV Bar & Kitchen is a high-end, immersive, and fully responsive web application 
 
 ---
 
-## 📸 Homepage Preview
+## 📸 Showcase & Visual Identity
 
-![EV Bar & Kitchen Preview](public/assets/homepage-preview.png)
+<table width="100%">
+  <tr>
+    <td width="35%" align="center" valign="top">
+      <img src="public/assets/homepage-preview.png" width="300" alt="EV Bar & Kitchen Homepage Preview" />
+    </td>
+    <td width="65%" valign="top">
+      <h3>✨ Premium Fine Dining Digital Experience</h3>
+      <p>EV Bar & Kitchen's user interface is designed to evoke a sense of high-end luxury and modern sophistication. Every visual element is crafted to provide a premium feel:</p>
+      <ul>
+        <li><strong>Fine Dining Artistry:</strong> Elegant presentation sections showing high-quality food photography and culinary philosophy.</li>
+        <li><strong>Interactive Seat & Stage Layout:</strong> A clean, user-friendly theatre-style seat selection interface that updates in real-time.</li>
+        <li><strong>Seamless Experience Customization:</strong> Book luxury add-ons like limousine shuttles or VIP lounge access directly from the reservation flow.</li>
+        <li><strong>Atmospheric Ambience:</strong> Visually rich dark theme with floating gold and emerald green lights and subtle texture noise.</li>
+      </ul>
+      <p><i>Scroll through the live page preview on the left to see the entire luxury landing experience.</i></p>
+    </td>
+  </tr>
+</table>
 
 ---
 
