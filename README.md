@@ -7,7 +7,7 @@ EV Bar & Kitchen is a high-end, fully responsive web application built with **Ne
 ## 📸 Showcase & Preview
 
 <p align="center">
-  <img src="public/assets/homepage-preview.png" width="100%" alt="EV Bar & Kitchen Homepage Preview" />
+  <img src="public/assets/homepage-preview.png" width="600" alt="EV Bar & Kitchen Homepage Preview" />
 </p>
 
 ---
